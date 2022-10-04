@@ -1,14 +1,18 @@
-<form asp-action="Index">
+<form asp-Action="Index">
     <p>
-        <lable>Hệ số A: </lable>
+        <label>Hệ số A:</label>
         <input type="text" name="heSoA">
     </p>
     <p>
-        <lable>Hệ số B: </lable>
+        <label>Hệ số B:</label>
         <input type="text" name="heSoB">
     </p>
     <p>
-        <input type="submit" value="Giải phương trình">
+        <label>Hệ số C:</label>
+        <input type="text" name="heSoC">
     </p>
-</form>
-<h3>@ViewBag.abc</h3>
+    <p>
+        <input type="submit" value="Tính">
+    </p>
+</form>    
+<h2>@ViewBag.thongBao</h2>
